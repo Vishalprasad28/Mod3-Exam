@@ -1,0 +1,12 @@
+uuid: 209dee14-0019-4556-b0af-2ce42a6aa55c
+langcode: en
+status: true
+dependencies: {  }
+id: get_in_touch
+label: 'Get in Touch'
+recipients:
+  - vishaldemo28@gmail.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

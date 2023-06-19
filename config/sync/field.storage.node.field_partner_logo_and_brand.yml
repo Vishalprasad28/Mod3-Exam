@@ -1,0 +1,21 @@
+uuid: 9e577e7b-c99b-4a2c-afe0-26c544a41688
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_partner_logo_and_brand
+field_name: field_partner_logo_and_brand
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: 1b64189a-607d-46dc-8d84-56da79ce8c6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_text_for_the_logo
+field_name: field_text_for_the_logo
+entity_type: paragraph
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

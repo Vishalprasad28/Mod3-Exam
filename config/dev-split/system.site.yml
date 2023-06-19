@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 5458f29b-7b03-46c8-8339-d8d3c0599cd5
+name: 'Innoraft Employee Management Portal'
+mail: vishaldemo28@gmail.com
+slogan: ''
+page:
+  403: /node/3
+  404: /node/2
+  front: /node/4
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

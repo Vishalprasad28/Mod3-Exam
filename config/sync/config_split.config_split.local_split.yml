@@ -1,0 +1,20 @@
+uuid: 81df9c96-3fa9-4573-b49a-106e0cc8c06a
+langcode: en
+status: true
+dependencies: {  }
+id: local_split
+label: 'local split'
+description: ''
+weight: 0
+folder: ../config/local-split
+module:
+  devel: 0
+  devel_generate: 0
+  views_ui: 0
+  webform: 0
+theme: {  }
+blacklist:
+  - system.site
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

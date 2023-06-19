@@ -1,0 +1,36 @@
+uuid: d83f157c-f92f-4363-8b1b-d0b90e2c0428
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.logo_text.field_logo
+    - field.field.paragraph.logo_text.field_text_for_the_logo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.logo_text
+  module:
+    - image
+    - text
+id: paragraph.logo_text.default
+targetEntityType: paragraph
+bundle: logo_text
+mode: default
+content:
+  field_logo:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_text_for_the_logo:
+    type: text_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

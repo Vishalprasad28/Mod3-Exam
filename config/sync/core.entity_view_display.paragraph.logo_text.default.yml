@@ -1,0 +1,90 @@
+uuid: 1d5d590c-0529-4dee-a21d-5b312bc817c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.logo_text.field_logo
+    - field.field.paragraph.logo_text.field_text_for_the_logo
+    - paragraphs.paragraphs_type.logo_text
+  module:
+    - image
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          2c5771ad-52cf-4842-8d71-7032a67c6c36:
+            uuid: 2c5771ad-52cf-4842-8d71-7032a67c6c36
+            region: first
+            configuration:
+              id: 'field_block:paragraph:logo_text:field_logo'
+              label: Logo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a21cb271-8771-4e9a-9960-e1c06b57c055:
+            uuid: a21cb271-8771-4e9a-9960-e1c06b57c055
+            region: second
+            configuration:
+              id: 'field_block:paragraph:logo_text:field_text_for_the_logo'
+              label: 'Text for the logo'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 50
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: paragraph.logo_text.default
+targetEntityType: paragraph
+bundle: logo_text
+mode: default
+content:
+  field_logo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text_for_the_logo:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: c17d1d46-da2a-45cd-8ac0-663dbeb55035
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_for_the_banner
+    - paragraphs.paragraphs_type.banner_image_text
+  module:
+    - text
+id: paragraph.banner_image_text.field_text_for_the_banner
+field_name: field_text_for_the_banner
+entity_type: paragraph
+bundle: banner_image_text
+label: 'Text for the banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

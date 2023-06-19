@@ -1,0 +1,34 @@
+uuid: 7e2a8688-55c5-4993-bbde-e50fd02458e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_logo_and_brand
+    - node.type.partners
+    - paragraphs.paragraphs_type.logo_text
+  module:
+    - entity_reference_revisions
+id: node.partners.field_partner_logo_and_brand
+field_name: field_partner_logo_and_brand
+entity_type: node
+bundle: partners
+label: 'Partner logo and brand'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      logo_text: logo_text
+    negate: 0
+    target_bundles_drag_drop:
+      banner_image_text:
+        weight: 3
+        enabled: false
+      logo_text:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

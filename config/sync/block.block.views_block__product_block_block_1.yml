@@ -1,0 +1,29 @@
+uuid: dbb35dc3-1818-47b0-9800-69c81763c9e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_block
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: views_block__product_block_block_1
+theme: olivero
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:product_block-block_1'
+settings:
+  id: 'views_block:product_block-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home
