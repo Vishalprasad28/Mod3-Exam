@@ -1,0 +1,21 @@
+uuid: b9dd4139-5b76-428e-a8d0-d5e4d8eab399
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_for_the_logo
+    - paragraphs.paragraphs_type.logo_text
+  module:
+    - text
+id: paragraph.logo_text.field_text_for_the_logo
+field_name: field_text_for_the_logo
+entity_type: paragraph
+bundle: logo_text
+label: 'Text for the logo'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

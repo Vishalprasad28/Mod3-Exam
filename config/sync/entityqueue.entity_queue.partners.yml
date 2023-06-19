@@ -1,0 +1,26 @@
+uuid: 251e9195-6a63-4774-a687-bfc7fcb142dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: partners
+label: Partners
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      partners: partners
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 100
+  act_as_queue: false
+  reverse: false

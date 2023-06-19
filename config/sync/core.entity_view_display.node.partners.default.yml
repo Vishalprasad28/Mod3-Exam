@@ -1,0 +1,30 @@
+uuid: 6bdf51fd-3636-4455-84f2-18a8e7ce31dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.partners.field_partner_logo_and_brand
+    - node.type.partners
+  module:
+    - entity_reference_revisions
+    - user
+id: node.partners.default
+targetEntityType: node
+bundle: partners
+mode: default
+content:
+  field_partner_logo_and_brand:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

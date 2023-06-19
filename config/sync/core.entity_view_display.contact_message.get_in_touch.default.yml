@@ -1,0 +1,30 @@
+uuid: 84483829-214b-4b91-9f45-7f1dbb2c5de1
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.get_in_touch
+    - field.field.contact_message.get_in_touch.field_address
+  module:
+    - address
+id: contact_message.get_in_touch.default
+targetEntityType: contact_message
+bundle: get_in_touch
+mode: default
+content:
+  field_address:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  message:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

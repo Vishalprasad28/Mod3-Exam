@@ -1,0 +1,25 @@
+uuid: 72af166e-5a90-439c-9de6-127651ddc2ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.get_in_touch
+    - field.storage.contact_message.field_address
+  module:
+    - address
+id: contact_message.get_in_touch.field_address
+field_name: field_address
+entity_type: contact_message
+bundle: get_in_touch
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

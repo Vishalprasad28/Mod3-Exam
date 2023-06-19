@@ -1,0 +1,26 @@
+uuid: b16422c2-9160-41de-8fde-db4eb7b08c72
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: top_3_products
+label: 'Top 3 Products'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      products: products
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: news
+queue_settings:
+  min_size: 3
+  max_size: 10
+  act_as_queue: false
+  reverse: false
